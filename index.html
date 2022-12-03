@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Protfolio</title>
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="./css/css/animate.css">
+    <!-- animate -->
+    <link rel="stylesheet" href="./css/css/style.css">
+    <!-- style -->
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+
+</head>
+<body>
+  <div class="container">
+    <!-- container-fluid start -->
+    <div class="row">
+      <!-- first row start  -->
+      <div class="col-lg-12 col-sm-12">
+        <!-- first col start         -->
+       
+        <div class="section-navber d-flex">
+
+          <nav class="navbar  navbar-expand-lg navbar-light  placeholder-wave rounded-3  ">
+            <!-- navber  start  -->
+            <div class="container-fluid">
+              <div class="logo">
+                <img src="./images/logo-removebg-preview.png" alt="">
+              </div>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Protfolio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Clients</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                  </li>
+                 
+                </ul>
+               
+              </div>
+            </div>
+         </nav> 
+         <div class="toggle-btn mt-2" id="btn">
+            <span id="btnText">Dark</span>
+            <img class="mb-1" src="./images/moon.png" id="btnIcon">
+  
+            
+          </div>
+        </div>
+       <!-- navber closed  -->
+                    
+      </div>
+      <!-- col end  -->
+    </div>
+    <!-- row end  -->
+
+
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6 col-sm-12">
+        <div class="hero-section wow fadeInDown">
+          <div class="title" >
+            <h1>Hello!</h1>
+            <h2> <span>I'm</span>  Abdullal Al Shahriar</h2>
+            <p class="mt-4">I'm a developer and designer with personal website design, I always try my best to provide the best experience</p>
+
+            <div class="btn-group" role="group" aria-label="Basic example">
+              <button type="button" class="btn btn-groups">Hire Me</button>
+            </div>  
+          
+          </div>
+        </div>
+      </div>
+
+
+
+      <div class="col-lg-6 col-sm-12">
+        <div class="image-box wow fadeInUp">
+          <img src="./images/rasel.png" alt="">
+          <div class="pattern">
+            <img class="img-one" src="./images/background.png" >
+            <img  class="img-one" src="./images/background.png" >
+          </div>
+        </div>
+      </div>
+
+    </div>
+     <div class="row">
+      <div class="col-lg-12 col-sm-12">
+        <section class="copy-right">
+          <p style="text-align:center; margin-top: 141px;"> &copy;Abdullah Al Shahriar</p>
+       </section>
+      </div>
+     </div>
+  </div>
+    
+
+
+
+
+
+
+
+  
+
+    <script>
+      let btn = document.getElementById("btn");
+      let btnText = document.getElementById("btnText");
+      let btnIcon = document.getElementById("btnIcon");
+
+      btn.onclick = function(){
+       document.body.classList.toggle("dark-theme");
+
+        if (document.body.classList.contains("dark-theme")){
+           btnIcon.src = "images/sun.png";
+           btnText.innerHTML ="Light";
+        }
+        else{
+           btnIcon.src = "images/moon.png";
+           btnText.innerHTML = "Dark";
+        }
+      }
+    </script>
+
+
+
+
+
+    <script src="./bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- <script src="./css/js/app.js"></script> -->
+    
+    <script src="./css/js/wow.min.js"></script>
+    <script src="./css/js/costom.js"></script>
+</body>
+</html>
